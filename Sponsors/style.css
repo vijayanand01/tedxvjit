@@ -1,0 +1,275 @@
+/* custom----------------------------------------------------- */
+
+/* custom----------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif, Arial;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+  min-height: 100%;
+}
+
+
+
+/* ______________________________________________________ */
+
+/* Navbar------------------------------------------------------- */
+
+.navbar {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-custom a {
+  color: #ffffff !important;
+  font-size: 0.9rem;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e62b1e;
+
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation:hover {
+  color: #ffffff;
+}
+
+.navbar-custom button {
+  border: 1px solid #e62b1e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 10px 30px;
+}
+
+.navbar-custom button:hover {
+  background-color: #e62b1e;
+  transition: 0.3s;
+}
+
+.btn {
+  background-color: transparent;
+  border: 0.3px solid #e62b1e;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  color: #e62b1e;
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: #e62b1e;
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
+.nav-right-illustration {
+  position: absolute;
+  right: 0%;
+  top: -15.01%;
+  transform: rotate(1.99deg);
+}
+
+/* illustration01 */
+.illustration-left-homepage {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-18%);
+  opacity: 1;
+}
+
+
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* ___________________________________HOME_PAGE_CONTENT_______________________________________ */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+
+
+.heading h1{
+font-size: 3.5rem;
+font-weight: 600;
+}
+
+.sponsor-name{
+  color: #e62b1e;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.sponsor-type{
+  font-size: 1.5rem;
+}
+
+.sponsor-details{
+  font-size: 0.9rem;
+  line-height: 150%;
+  opacity:0.6 ;
+
+}
+
+.sponsor-row{
+  margin-top: 5%;
+}
+
+
+
+
+
+
+.sponser-left-illustration{
+  position: absolute;
+top: 1%;
+z-index: -5;  
+}
+
+
+.blu-logo{
+  padding-top: 10%;
+}
+
+.enfiled-name{
+  margin-top: 5%;
+}
+
+.trinker-logo{
+  padding-top: 3%;
+}
+
+.amd-text{
+  padding-top: 2%;
+}
+/*________________________________________ FOOTER________________________________________________________________ */
+/* _____________________________________________________%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+/* Footer-section */
+
+.illustration-footer {
+  opacity: 0.87;
+  position: absolute;
+}
+
+.footer-section {
+  color: #ffffff;
+  padding-bottom: 8%;
+  background: #000000;
+}
+
+.footer-section h1 {
+  font-size: 2.2rem;
+}
+
+.footer-section .nav-link {
+  color: #ffffff;
+  opacity: 0.6;
+  font-size: 1rem;
+}
+
+.footer-section .box-2 .nav-link {
+  display: block;
+}
+
+
+.footer-section .box-2 .youtube-icon-footer:hover {
+  color: #ff0000;
+}
+
+.footer-section .box-2 .twitter-icon-footer:hover {
+  color: #4267b2;
+}
+
+.footer-section .box-2 .instagram-icon-footer:hover {
+  color: #bc1888;
+}
+
+.input-footer input {
+  opacity: 0.4;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+}
+
+.box-3 p{
+  opacity: 0.7;
+}
+
+
+
+
+/* ******************************************************************************************************************* */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&--------RESPONSIVE-------&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+  /* _____________________________________________________________________________________________________________ */
+
+

@@ -1,0 +1,148 @@
+
+/* custom----------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+/* ______________________________________________________ */
+
+/* Navbar------------------------------------------------------- */
+
+.navbar {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-custom a {
+  color: #ffffff !important;
+  font-size: 0.9rem;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e62b1e;
+
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation:hover {
+  color: #ffffff;
+}
+
+.navbar-custom button {
+  border: 1px solid #e62b1e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 10px 30px;
+}
+
+.navbar-custom .Participate-btn-nav:hover {
+  background-color: #e62b1e;
+  transition: 0.3s;
+}
+
+.btn {
+  background-color: transparent;
+  border: 0.3px solid #e62b1e;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  color: #e62b1e;
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.35s ease-out;
+  background-color: #e62b1e;
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
+/* illustration01 */
+
+.illustration-left-homepage {
+  position: absolute;
+  bottom: -15%;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/* Nav */
+.title{
+  color: #e62b1e;
+  
+}
+
